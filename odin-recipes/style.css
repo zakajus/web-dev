@@ -1,0 +1,14 @@
+body {
+    font-family: 'Libre Baskerville', serif;
+    background-color: #f5f9f8;
+    color: #0c1412;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px;
+}
