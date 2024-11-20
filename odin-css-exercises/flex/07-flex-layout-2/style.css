@@ -4,22 +4,72 @@ body {
   min-height: 100vh;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.content {
+  display: flex;
+  height: 100vh;
+}
+
 .header {
   height: 72px;
   background: darkmagenta;
   color: white;
+  font-size: 32px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
 }
+
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sidebar {
   width: 300px;
+  flex-shrink: 0;
   background: royalblue;
   box-sizing: border-box;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 48px;
+  gap: 16px;
+}
+
+.card {
+  width: 350px;
+  padding: 8px;
+  min-height: 250px;
+}
+
+.sidebar ul {
+  padding: 16px;
+  margin: 0px;
+}
+
+.sidebar li {
+  list-style-type: none;
+  margin-top: 8px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
 }
 
 .card {
