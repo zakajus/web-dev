@@ -1,6 +1,13 @@
 const square = document.querySelector(".square");
 const inputBox = document.querySelector(".input-box");
 
+function getRandomColor(alpha) {
+    return `rgba(${Math.floor(Math.random() * 256)},
+        ${Math.floor(Math.random() * 256)},
+        ${Math.floor(Math.random() * 256)},
+        ${alpha})`    
+}
+
 function generateGrid(gridDimension) {
     // Clear grid
     while (square.firstChild) {
@@ -14,9 +21,12 @@ function generateGrid(gridDimension) {
         for (let j = 0; j < gridDimension; ++j) {
             const box2 = document.createElement("div");
             box2.classList.add("gridbox");
+            
+            let alpha = 1;
 
             box2.addEventListener("mouseover", () => {
-                box2.style.background = "lime";
+                alpha -= 0.1;
+                box2.style.background = getRandomColor(alpha);
             })
 
             box.appendChild(box2)

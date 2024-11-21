@@ -32,6 +32,7 @@
     height: 80vmin;
     outline: 2px solid black;
     display: flex;
+    background-color: black;
 }
 
 /* .square-col {
@@ -39,7 +40,7 @@
 } */
 
 .gridbox {
-    outline: 1px solid rgba(0,0,0,0.05);
+    outline: 1px solid rgba(255, 255, 255, 0.05);
     display: flex;
     flex-direction: column;
     width: 100%;
