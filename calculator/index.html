@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="flex-box">
+        <div class="calc-box">
+            <div class="flex-col">
+                <!-- Layout:
+                Display row
+                7 8 9 * /
+                4 5 6 + - 
+                1 2 3 = =
+                0 . S C C 
+                -->
+                <div class="flex-row display"></div>
+                <div class="flex-row">
+                    <div class="box"><button>7</button></div>
+                    <div class="box"><button>8</button></div>
+                    <div class="box"><button>9</button></div>
+                    <div class="box"><button>*</button></div>
+                    <div class="box"><button>/</button></div>
+                </div>
+                <div class="flex-row">
+                    <div class="box"><button>4</button></div>
+                    <div class="box"><button>5</button></div>
+                    <div class="box"><button>6</button></div>
+                    <div class="box"><button>+</button></div>
+                    <div class="box"><button>-</button></div>
+                </div>
+                <div class="flex-row"> 
+                    <div class="box"><button>1</button></div>
+                    <div class="box"><button>2</button></div>
+                    <div class="box"><button>3</button></div>
+                    <div class="box double"><button>=</button></div>
+                </div>
+                <div class="flex-row">
+                    <div class="box"><button>0</button></div>
+                    <div class="box"><button>.</button></div>
+                    <div class="box"><button>+/-</button></div>
+                    <div class="box double"><button>C</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
