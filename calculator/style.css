@@ -1,88 +1,88 @@
 body {
-    background: #79B4B7;
-    background: radial-gradient(at right top, #79B4B7, #F78685);
-    font-family: "Inter";
+	background: #79b4b7;
+	background: radial-gradient(at right top, #79b4b7, #f78685);
+	font-family: "Inter";
 }
 
 .flex-box {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .calc-box {
-    width: 300px;
-    height: 400px;
-    background-color: #FEFBF3;
-    padding: 80px 10px 10px;
-    border-radius: 15px;
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+	width: 300px;
+	height: 400px;
+	background-color: #fefbf3;
+	padding: 80px 10px 10px;
+	border-radius: 15px;
+	box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 }
 
 .display {
-    background-color: #FEFBF3;
-    height: 120px; 
-    display: flex;
-    align-items: center;
-    /* margin-top: 40px; */
-    overflow: hidden;
+	background-color: #fefbf3;
+	height: 120px;
+	display: flex;
+	align-items: center;
+	/* margin-top: 40px; */
+	overflow: hidden;
 }
 
 .display p {
-    text-align: right;
-    width: 100%;
-    font-size: 60px;
-    color: #303030;
+	text-align: right;
+	width: 100%;
+	font-size: 60px;
+	color: #303030;
 }
 
 .flex-col {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-    gap: 10px;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	gap: 10px;
 }
 
 .flex-row {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-    gap: 10px;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: 100%;
+	gap: 10px;
 }
 
 .box {
-    flex-grow: 1;
-    box-sizing: border-box;
-    /* border: 1px solid black; */
+	flex-grow: 1;
+	box-sizing: border-box;
+	/* border: 1px solid black; */
 }
 
 .tall-box {
-    flex-grow: 9;
-    box-sizing: border-box;
+	flex-grow: 9;
+	box-sizing: border-box;
 }
 
 button {
-    width: 100%;
-    height: 100%;
-    padding: 0px;
-    border: 0px;
-    box-sizing: border-box;
-    background-color: #ffefc9;
-    border-radius: 50px;
-    font-size: 20px;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	border: 0px;
+	box-sizing: border-box;
+	background-color: #ffefc9;
+	border-radius: 50px;
+	font-size: 20px;
 }
 
 .operator-button {
-    background-color: #79B4B7;
+	background-color: #79b4b7;
 }
 
 .tall-button {
-    background-color: #9D9D9D;
+	background-color: #9d9d9d;
 }
 
 #button-container {
-    display: flex;
+	display: flex;
 }
