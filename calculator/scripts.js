@@ -38,14 +38,24 @@ function changeDisplay(outputString) {
     } else {
         displayField.textContent = outputString;
     }
+
+    if (outputString.length > 12) {
+        displayField.style.fontSize = "30px";
+    } else if (outputString.length > 9) {
+        displayField.style.fontSize = "40px";
+    } else if (outputString.length > 6) {
+        displayField.style.fontSize = "50px";
+    } else {
+        displayField.style.fontSize = "60px";
+    }
 };
 
 
 
 numberButtons.forEach(button => {
     button.addEventListener("click", () => {
-        // fits 8 digits
-        if (currentInput.length <= 7) {
+        // fits 16 digits
+        if (currentInput.length <= 15) {
             const value = button.textContent;
             currentInput += value;
             changeDisplay(currentInput);
@@ -89,6 +99,9 @@ equalsButton.addEventListener("click", () => {
             case "/":
                 result = divide(firstOperand, secondOperand);
                 break;
+        }
+        if (result !== "ERROR" && !Number.isInteger(result)) {
+            result = result.toFixed(5);
         }
         currentInput = result;
         result = result.toString();
