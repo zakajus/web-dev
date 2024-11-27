@@ -41,7 +41,6 @@ function changeDisplay(outputString) {
 };
 
 
-changeDisplay("");
 
 numberButtons.forEach(button => {
     button.addEventListener("click", () => {
@@ -67,7 +66,7 @@ operatorButtons.forEach(button => {
 })
 
 dotButton.addEventListener("click", () => {
-    if (currentInput !== "" && (currentInput.includes("."))) {
+    if (currentInput !== "" && !(currentInput.includes("."))) {
         currentInput += ".";
         changeDisplay(currentInput);
     }
@@ -109,3 +108,4 @@ clearButton.addEventListener("click", () => {
     changeDisplay(currentInput);
 })
 
+changeDisplay("");
