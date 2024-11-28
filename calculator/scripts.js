@@ -29,8 +29,6 @@ function divide(a, b) {
 	}
 }
 
-// operate(a, b, operator)
-
 function changeDisplay(outputString) {
 	if (outputString === "") {
 		displayField.textContent = "0";
